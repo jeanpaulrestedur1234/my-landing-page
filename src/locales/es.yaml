@@ -1,60 +1,68 @@
 header:
   nav:
     home: "INICIO"
-    services: "SERVICIOS"
-    about: "NOSOTROS"
-    blog: "BLOG"
-  cta: "CONTÁCTANOS"
+    services: "SOLUCIONES"
+    about: "QUIÉNES SOMOS"
+    blog: "RECURSOS"
+  cta: "HABLEMOS"
+  name: "falta nombre"
+  logo: "P"
+
 hero:
   title:
-    main: "IMPULSA TU FUTURO CON"
-    highlight: "INTELIGENCIA ARTIFICIAL"
-  description: "Usamos el poder de la IA para llevar la innovación, eficiencia y el crecimiento de tu negocio al siguiente nivel."
+    main: "TRANSFORMAMOS TU NEGOCIO CON"
+    highlight: "TECNOLOGÍA E INTELIGENCIA ARTIFICIAL"
+  description: "Ayudamos a las empresas a optimizar procesos, analizar datos y escalar con soluciones de software e inteligencia artificial a la medida."
   stats:
-    growth: "Crecimiento y éxito para tu empresa"
+    growth: "Eficiencia, datos y tecnología para crecer"
+
 illustration:
-  cta: "¡EMPIEZA YA!"
+  cta: "COMIENZA AHORA"
+
 services:
-  title: "Nuestros Servicios"
-  subtitle: "Soluciones inteligentes para tu transformación digital"
+  title: "Nuestras Soluciones"
+  subtitle: "Transformación digital enfocada en resultados reales"
   items:
     automation:
-      title: "Automatización con IA"
-      desc: "Implementamos soluciones de inteligencia artificial que automatizan tus procesos críticos"
+      title: "Optimización y Automatización de Procesos"
+      desc: "Digitalizamos y automatizamos procesos operativos para reducir costos, tiempos y errores."
     integration:
-      title: "Integración de Sistemas"
-      desc: "Conectamos todas tus herramientas para trabajar en perfecta sincronía"
+      title: "Integración de Software y Sistemas"
+      desc: "Unificamos tus plataformas y sistemas para que la información fluya de forma eficiente."
     analytics:
-      title: "Análisis Inteligente"
-      desc: "Dashboards con IA que predicen tendencias y optimizan decisiones"
+      title: "Análisis de Datos e Inteligencia de Negocio"
+      desc: "Convertimos tus datos en insights accionables mediante dashboards y modelos predictivos."
     consulting:
-      title: "Consultoría Digital"
-      desc: "Te guiamos en cada paso de tu transformación tecnológica"
+      title: "Consultoría en Transformación Digital"
+      desc: "Definimos la estrategia tecnológica adecuada para el crecimiento de tu empresa."
     development:
-      title: "Desarrollo Ágil"
-      desc: "Creamos soluciones personalizadas con metodologías modernas"
+      title: "Desarrollo de Software a Medida"
+      desc: "Creamos soluciones digitales personalizadas alineadas a tus necesidades de negocio."
     training:
-      title: "Capacitación"
-      desc: "Entrenamos a tu equipo para aprovechar al máximo la tecnología"
+      title: "Implementación y Capacitación en IA"
+      desc: "Implementamos soluciones de IA y capacitamos a tu equipo para maximizar su impacto."
+
 whyChooseUs:
-  title: "¿Por Qué Elegirnos?"
-  subtitle: "Resultados comprobados que impulsan tu crecimiento"
+  title: "¿Por Qué Trabajar con Nosotros?"
+  subtitle: "Tecnología enfocada en eficiencia, escalabilidad y resultados"
   stats:
     efficiency:
       number: "10x"
-      text: "Aumento en eficiencia operativa"
+      text: "Mejora en eficiencia operativa"
     errors:
       number: "95%"
-      text: "Reducción de errores manuales"
+      text: "Reducción de procesos manuales"
     costs:
       number: "60%"
-      text: "Ahorro en costos operativos"
+      text: "Optimización de costos"
     support:
-      number: "24/7"
-      text: "Soporte y monitoreo continuo"
+      number: "End-to-End"
+      text: "Acompañamiento en todo el proceso"
+
 ctaSection:
-  title: "Transforma Tu Negocio Hoy"
-  description: "Agenda una consultoría gratuita y descubre cómo la IA puede revolucionar tu empresa"
-  button: "AGENDA TU CONSULTORÍA GRATIS"
+  title: "Lleva Tu Empresa al Siguiente Nivel"
+  description: "Agenda una sesión estratégica y descubre cómo la transformación digital y la IA pueden potenciar tu negocio."
+  button: "AGENDA UNA CONSULTORÍA"
+
 footer:
-  copyright: "© 2024 DigitalFlow. Impulsando el futuro con Inteligencia Artificial."
+  copyright: "© 2024 DigitalFlow. Transformación digital, datos e inteligencia artificial."

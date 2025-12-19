@@ -14,9 +14,9 @@ export const Header = () => {
         {/* Logo */}
         <div className="logo-container">
           <div className="logo-icon">
-            <span>D</span>
+            <span>{t('header.logo')}</span>
           </div>
-          <span className="logo-text">DIGITALFLOW</span>
+          <span className="logo-text">{t('header.name')}</span>
         </div>
 
         {/* Navigation Desktop */}

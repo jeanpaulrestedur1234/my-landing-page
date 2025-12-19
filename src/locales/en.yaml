@@ -1,60 +1,68 @@
 header:
   nav:
     home: "HOME"
-    services: "SERVICES"
+    services: "SOLUTIONS"
     about: "ABOUT US"
-    blog: "BLOG"
-  cta: "CONTACT US"
+    blog: "RESOURCES"
+  cta: "LET'S TALK"
+  name: "falta nombre"
+  logo: "P"
+
 hero:
   title:
-    main: "BOOST YOUR FUTURE WITH"
-    highlight: "ARTIFICIAL INTELLIGENCE"
-  description: "We use the power of AI to take your business innovation, efficiency, and growth to the next level."
+    main: "WE TRANSFORM YOUR BUSINESS WITH"
+    highlight: "TECHNOLOGY & ARTIFICIAL INTELLIGENCE"
+  description: "We help companies optimize processes, leverage data, and scale through tailored software solutions and artificial intelligence."
   stats:
-    growth: "Growth and success for your company"
+    growth: "Efficiency, data, and technology to drive growth"
+
 illustration:
-  cta: "START NOW!"
+  cta: "GET STARTED"
+
 services:
-  title: "Our Services"
-  subtitle: "Smart solutions for your digital transformation"
+  title: "Our Solutions"
+  subtitle: "Digital transformation focused on real business results"
   items:
     automation:
-      title: "AI Automation"
-      desc: "We implement AI solutions to automate your critical processes"
+      title: "Process Optimization & Automation"
+      desc: "We digitize and automate operational processes to reduce costs, time, and manual errors."
     integration:
-      title: "System Integration"
-      desc: "We connect all your tools to work in perfect harmony"
+      title: "Software & Systems Integration"
+      desc: "We connect your platforms and systems to ensure seamless data flow across your organization."
     analytics:
-      title: "Smart Analytics"
-      desc: "AI-powered dashboards that predict trends and optimize decisions"
+      title: "Data Analytics & Business Intelligence"
+      desc: "We turn your data into actionable insights through dashboards and predictive analytics."
     consulting:
-      title: "Digital Consulting"
-      desc: "We guide you through every step of your technological transformation"
+      title: "Digital Transformation Consulting"
+      desc: "We define the right technology strategy aligned with your business goals."
     development:
-      title: "Agile Development"
-      desc: "We create custom solutions using modern methodologies"
+      title: "Custom Software Development"
+      desc: "We build scalable, tailor-made digital solutions designed around your business needs."
     training:
-      title: "Training"
-      desc: "We train your team to make the most of technology"
+      title: "AI Implementation & Training"
+      desc: "We implement AI solutions and train your team to maximize their impact."
+
 whyChooseUs:
   title: "Why Choose Us?"
-  subtitle: "Proven results that drive your growth"
+  subtitle: "Technology designed for efficiency, scalability, and results"
   stats:
     efficiency:
       number: "10x"
-      text: "Operational efficiency increase"
+      text: "Increase in operational efficiency"
     errors:
       number: "95%"
-      text: "Reduction in manual errors"
+      text: "Reduction in manual processes"
     costs:
       number: "60%"
-      text: "Operational cost savings"
+      text: "Cost optimization"
     support:
-      number: "24/7"
-      text: "Continuous support and monitoring"
+      number: "End-to-End"
+      text: "Full-cycle support and delivery"
+
 ctaSection:
-  title: "Transform Your Business Today"
-  description: "Schedule a free consultation and discover how AI can revolutionize your company"
-  button: "SCHEDULE YOUR FREE CONSULTATION"
+  title: "Take Your Business to the Next Level"
+  description: "Schedule a strategy session and discover how digital transformation and AI can elevate your organization."
+  button: "BOOK A CONSULTATION"
+
 footer:
-  copyright: "© 2024 DigitalFlow. Powering the future with Artificial Intelligence."
+  copyright: "© 2024 DigitalFlow. Digital transformation powered by data and artificial intelligence."

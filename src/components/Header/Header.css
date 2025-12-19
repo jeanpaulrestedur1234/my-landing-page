@@ -7,7 +7,7 @@
     left: 0;
     right: 0;
     z-index: var(--z-fixed);
-    background: transparent;
+    background: var(--color-background);
     transition: all var(--transition-base) var(--ease-out);
 }
 
