@@ -1,9 +1,7 @@
 import { BarChart3, Sparkles } from "lucide-react";
-import { useTranslation } from 'react-i18next';
 import './Heroillustration.css';
 
 export const HeroIllustration = () => {
-  const { t } = useTranslation();
 
   return (
     <div className="illustration-wrapper">
