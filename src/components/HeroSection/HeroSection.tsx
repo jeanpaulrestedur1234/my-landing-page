@@ -10,9 +10,6 @@ export const HeroSection = () => {
 
   return (
     <section className="hero-section">
-      {/* Animated Background Circles */}
-      <div className="bg-circle bg-circle-cyan"></div>
-      <div className="bg-circle bg-circle-blue"></div>
 
       <div className="hero-container">
         {/* Left Content */}
@@ -55,11 +52,15 @@ export const HeroSection = () => {
               ))}
             </div>
           </div>
+
+
         </div>
-      <div className="hero-illustration-wrapper">
-        <HeroIllustration />
+        <div className="hero-illustration-wrapper">
+          <HeroIllustration />
+        </div>
       </div>
-      </div>
+
+
     </section>
   );
 };

@@ -2,7 +2,6 @@
    HEADER - Main Styles
    ============================================ */
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -100,6 +99,8 @@
     .nav-desktop {
         display: flex;
     }
+
+
 }
 
 .nav-link {

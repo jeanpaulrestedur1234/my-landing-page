@@ -1,77 +1,29 @@
-import { BarChart3, Sparkles } from "lucide-react";
+import { Canvas, useThree } from "@react-three/fiber"
+import Model from "./Model"
+import { Suspense } from "react"
+import { useProgress, Html, ScrollControls } from "@react-three/drei"
 import './Heroillustration.css';
+
+function Loader() {
+  const { progress, active } = useProgress()
+
+  return <Html center>{progress.toFixed(1)} % loaded</Html>
+}
+
 
 export const HeroIllustration = () => {
 
   return (
     <div className="illustration-wrapper">
-      {/* Chat Bubbles */}
-      <div className="card-efficiency">
-        <div className="chat-bubble-main">
-          <div className="dots-container">
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
-          </div>
-        </div>
-        <div className="chat-bubble-secondary">
-          <div className="lines-container">
-            <div className="line line-long"></div>
-            <div className="line line-short"></div>
-          </div>
-        </div>
-      </div>
-
-      {/* Laptop with Dashboard */}
-      <div className="card-processing">
-        <div className="processing-header">
-          <div className="window-controls">
-            <div className="control-dot control-red"></div>
-            <div className="control-dot control-yellow"></div>
-            <div className="control-dot control-green"></div>
-          </div>
-        </div>
-        <div className="processing-content">
-          <div className="processing-row">
-            <div className="icon-box-violet">
-              <BarChart3 className="chart-icon" />
-            </div>
-            <div className="progress-container">
-              <div className="progress-bar-bg">
-                <div className="progress-bar-fill"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Robot */}
-      <div className="robot-container">
-        <div className="robot-body">
-          {/* Head */}
-          <div className="robot-head">
-            <div className="robot-eye robot-eye-left"></div>
-            <div className="robot-eye robot-eye-right"></div>
-            <div className="robot-mouth"></div>
-            <div className="robot-antenna"></div>
-            <div className="robot-sensor"></div>
-          </div>
-
-          {/* Arms */}
-          <div className="robot-arm robot-arm-left"></div>
-          <div className="robot-arm robot-arm-right"></div>
-
-          {/* Chest */}
-          <div className="robot-chest">
-            <Sparkles className="sparkles-icon" />
-          </div>
-
-          {/* Base */}
-          <div className="robot-base"></div>
-        </div>
-      </div>
-
-
+      <Canvas gl={{ antialias: true }} dpr={[1, 1.5]}>
+        <directionalLight position={[-5, -5, 5]} intensity={4} />
+        <Suspense fallback={<Loader />}>
+          <ScrollControls damping={0.5} pages={3} style={{ scrollbarWidth: "none" }}>
+            <Model />
+          </ScrollControls>
+        </Suspense>
+      </Canvas>
     </div>
-  );
+  )
 };
+

@@ -12,6 +12,8 @@
     display: flex;
     align-items: center;
     background-color: var(--color-background);
+    position: relative;
+    flex-wrap: wrap;
 }
 
 @media (min-width: 640px) {
@@ -117,6 +119,7 @@
     align-items: center;
     gap: var(--spacing-8);
     padding-top: var(--spacing-4);
+    min-width: 50vw;
 }
 
 .stat-item {
@@ -220,7 +223,7 @@
 }
 
 @media (max-width: 768px) {
-  .hero-illustration-wrapper {
-    height: auto;
-  }
+    .hero-illustration-wrapper {
+        height: 100vh;
+    }
 }
