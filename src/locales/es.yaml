@@ -1,0 +1,60 @@
+header:
+  nav:
+    home: "INICIO"
+    services: "SERVICIOS"
+    about: "NOSOTROS"
+    blog: "BLOG"
+  cta: "CONTÁCTANOS"
+hero:
+  title:
+    main: "IMPULSA TU FUTURO CON"
+    highlight: "INTELIGENCIA ARTIFICIAL"
+  description: "Usamos el poder de la IA para llevar la innovación, eficiencia y el crecimiento de tu negocio al siguiente nivel."
+  stats:
+    growth: "Crecimiento y éxito para tu empresa"
+illustration:
+  cta: "¡EMPIEZA YA!"
+services:
+  title: "Nuestros Servicios"
+  subtitle: "Soluciones inteligentes para tu transformación digital"
+  items:
+    automation:
+      title: "Automatización con IA"
+      desc: "Implementamos soluciones de inteligencia artificial que automatizan tus procesos críticos"
+    integration:
+      title: "Integración de Sistemas"
+      desc: "Conectamos todas tus herramientas para trabajar en perfecta sincronía"
+    analytics:
+      title: "Análisis Inteligente"
+      desc: "Dashboards con IA que predicen tendencias y optimizan decisiones"
+    consulting:
+      title: "Consultoría Digital"
+      desc: "Te guiamos en cada paso de tu transformación tecnológica"
+    development:
+      title: "Desarrollo Ágil"
+      desc: "Creamos soluciones personalizadas con metodologías modernas"
+    training:
+      title: "Capacitación"
+      desc: "Entrenamos a tu equipo para aprovechar al máximo la tecnología"
+whyChooseUs:
+  title: "¿Por Qué Elegirnos?"
+  subtitle: "Resultados comprobados que impulsan tu crecimiento"
+  stats:
+    efficiency:
+      number: "10x"
+      text: "Aumento en eficiencia operativa"
+    errors:
+      number: "95%"
+      text: "Reducción de errores manuales"
+    costs:
+      number: "60%"
+      text: "Ahorro en costos operativos"
+    support:
+      number: "24/7"
+      text: "Soporte y monitoreo continuo"
+ctaSection:
+  title: "Transforma Tu Negocio Hoy"
+  description: "Agenda una consultoría gratuita y descubre cómo la IA puede revolucionar tu empresa"
+  button: "AGENDA TU CONSULTORÍA GRATIS"
+footer:
+  copyright: "© 2024 DigitalFlow. Impulsando el futuro con Inteligencia Artificial."

@@ -1,0 +1,60 @@
+header:
+  nav:
+    home: "HOME"
+    services: "SERVICES"
+    about: "ABOUT US"
+    blog: "BLOG"
+  cta: "CONTACT US"
+hero:
+  title:
+    main: "BOOST YOUR FUTURE WITH"
+    highlight: "ARTIFICIAL INTELLIGENCE"
+  description: "We use the power of AI to take your business innovation, efficiency, and growth to the next level."
+  stats:
+    growth: "Growth and success for your company"
+illustration:
+  cta: "START NOW!"
+services:
+  title: "Our Services"
+  subtitle: "Smart solutions for your digital transformation"
+  items:
+    automation:
+      title: "AI Automation"
+      desc: "We implement AI solutions to automate your critical processes"
+    integration:
+      title: "System Integration"
+      desc: "We connect all your tools to work in perfect harmony"
+    analytics:
+      title: "Smart Analytics"
+      desc: "AI-powered dashboards that predict trends and optimize decisions"
+    consulting:
+      title: "Digital Consulting"
+      desc: "We guide you through every step of your technological transformation"
+    development:
+      title: "Agile Development"
+      desc: "We create custom solutions using modern methodologies"
+    training:
+      title: "Training"
+      desc: "We train your team to make the most of technology"
+whyChooseUs:
+  title: "Why Choose Us?"
+  subtitle: "Proven results that drive your growth"
+  stats:
+    efficiency:
+      number: "10x"
+      text: "Operational efficiency increase"
+    errors:
+      number: "95%"
+      text: "Reduction in manual errors"
+    costs:
+      number: "60%"
+      text: "Operational cost savings"
+    support:
+      number: "24/7"
+      text: "Continuous support and monitoring"
+ctaSection:
+  title: "Transform Your Business Today"
+  description: "Schedule a free consultation and discover how AI can revolutionize your company"
+  button: "SCHEDULE YOUR FREE CONSULTATION"
+footer:
+  copyright: "© 2024 DigitalFlow. Powering the future with Artificial Intelligence."
