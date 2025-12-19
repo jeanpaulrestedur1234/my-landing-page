@@ -56,9 +56,9 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Right Content - Illustrations */}
+      <div className="hero-illustration-wrapper">
         <HeroIllustration />
+      </div>
       </div>
     </section>
   );
