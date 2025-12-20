@@ -247,3 +247,7 @@
     font-size: var(--font-size-sm) !important;
     height: 100%;
 }
+
+.react-international-phone-input-container{
+    align-items: center;
+}
