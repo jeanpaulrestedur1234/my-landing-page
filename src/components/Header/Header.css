@@ -191,6 +191,7 @@
     cursor: pointer;
     overflow: hidden;
     transition: all var(--transition-base) var(--ease-out);
+    margin: 0 2rem;
 }
 
 @media (max-width: 768px) {
