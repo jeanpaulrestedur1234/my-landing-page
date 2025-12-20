@@ -217,6 +217,7 @@
     border-color: var(--color-secondary-500) !important;
     background: rgba(255, 255, 255, 0.06) !important;
     box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.1) !important;
+    height: 100%;
 }
 
 .react-international-phone-country-selector-dropdown {
