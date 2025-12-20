@@ -1,0 +1,246 @@
+.contact-page {
+    padding: var(--spacing-20) var(--spacing-4);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-page::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, var(--color-primary-600) 0%, transparent 70%);
+    top: -200px;
+    left: -200px;
+    border-radius: 50%;
+    opacity: 0.15;
+    filter: blur(80px);
+    pointer-events: none;
+}
+
+.contact-page::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, var(--color-secondary-500) 0%, transparent 70%);
+    bottom: -100px;
+    right: -100px;
+    border-radius: 50%;
+    opacity: 0.15;
+    filter: blur(80px);
+    pointer-events: none;
+}
+
+.contact-container {
+    max-width: var(--max-width-lg);
+    width: 100%;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: var(--spacing-10);
+    border-radius: var(--radius-2xl);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: var(--shadow-primary);
+    position: relative;
+    z-index: 10;
+}
+
+.contact-container h1 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-4);
+    text-align: center;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.5px;
+}
+
+.contact-container p {
+    text-align: center;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-10);
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.form-group label {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    margin-left: var(--spacing-1);
+}
+
+.form-group input,
+.form-group textarea,
+.phone-input-group select {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-4);
+    color: var(--color-text-primary);
+    font-family: inherit;
+    font-size: var(--font-size-base);
+    transition: all var(--transition-base);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.phone-input-group select:focus {
+    outline: none;
+    border-color: var(--color-secondary-500);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.1);
+}
+
+.phone-input-group {
+    display: flex;
+    gap: var(--spacing-2);
+}
+
+.phone-input-group select {
+    width: 110px;
+    appearance: none;
+    /* Try to hide default arrow where possible for clean look, or style it */
+    cursor: pointer;
+    text-overflow: ellipsis;
+}
+
+/* Custom arrow for select if needed, or keeping native for accessibility on mobile */
+.phone-input-group select option {
+    background: var(--color-neutral-900);
+    color: var(--color-text-primary);
+}
+
+
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    background: var(--gradient-cta);
+    color: white;
+    border: none;
+    border-radius: var(--radius-full);
+    padding: var(--spacing-4) var(--spacing-8);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    margin-top: var(--spacing-4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: var(--shadow-glow-primary);
+}
+
+.submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.4);
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.phone-input {
+    flex: 1;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-4);
+    color: var(--color-text-primary);
+    font-family: inherit;
+    font-size: var(--font-size-base);
+    transition: all var(--transition-base);
+}
+
+
+
+
+.react-international-phone-input-container {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: var(--spacing-2);
+}
+
+.phone-input {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: var(--radius-lg) !important;
+    padding: var(--spacing-4) !important;
+    color: var(--color-text-primary) !important;
+    font-family: inherit !important;
+    font-size: var(--font-size-base) !important;
+    transition: all var(--transition-base) !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.react-international-phone-country-selector-button {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: var(--radius-lg) !important;
+    padding: 0 var(--spacing-3) !important;
+    transition: all var(--transition-base) !important;
+    height: 100%;
+}
+
+.phone-input:focus,
+.react-international-phone-country-selector-button:hover,
+.react-international-phone-country-selector-button[aria-expanded="true"] {
+    outline: none !important;
+    border-color: var(--color-secondary-500) !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.1) !important;
+}
+
+.react-international-phone-country-selector-dropdown {
+    background: #0f172a !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: var(--radius-lg) !important;
+    backdrop-filter: blur(16px);
+    box-shadow: var(--shadow-primary) !important;
+    margin-top: 8px !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item {
+    background: transparent !important;
+    color: var(--color-text-primary) !important;
+    padding: var(--spacing-2) var(--spacing-4) !important;
+    transition: background 0.2s ease !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item-country-name,
+.react-international-phone-country-selector-dropdown__list-item-dial-code {
+    color: var(--color-text-primary) !important;
+    font-size: var(--font-size-sm) !important;
+}

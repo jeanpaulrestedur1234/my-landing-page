@@ -5,8 +5,8 @@ header:
     about: "QUIÉNES SOMOS"
     blog: "RECURSOS"
   cta: "HABLEMOS"
-  name: "falta nombre"
-  logo: "P"
+  name: "Wally"
+  logo: "W"
 
 hero:
   title:
@@ -66,3 +66,17 @@ ctaSection:
 
 footer:
   copyright: "© 2024 DigitalFlow. Transformación digital, datos e inteligencia artificial."
+
+contact:
+  title: "Contáctanos"
+  subtitle: "Nos encantaría escucharte. Por favor completa el formulario."
+  form:
+    email: "Correo Electrónico"
+    emailPlaceholder: "tu@email.com"
+    phone: "Teléfono"
+    phonePlaceholder: "+57 312 345 6789"
+    details: "Detalles"
+    detailsPlaceholder: "¿Cómo podemos ayudarte?"
+    send: "Enviar Mensaje"
+    sending: "Enviando..."
+  success: "¡Mensaje enviado! Te contactaremos pronto."

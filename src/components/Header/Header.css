@@ -191,12 +191,11 @@
     cursor: pointer;
     overflow: hidden;
     transition: all var(--transition-base) var(--ease-out);
-    display: none;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .cta-button {
-        display: block;
+        display: none;
     }
 }
 

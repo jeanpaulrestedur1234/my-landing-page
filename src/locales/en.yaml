@@ -5,8 +5,8 @@ header:
     about: "ABOUT US"
     blog: "RESOURCES"
   cta: "LET'S TALK"
-  name: "falta nombre"
-  logo: "P"
+  name: "Wally"
+  logo: "W"
 
 hero:
   title:
@@ -66,3 +66,17 @@ ctaSection:
 
 footer:
   copyright: "© 2024 DigitalFlow. Digital transformation powered by data and artificial intelligence."
+
+contact:
+  title: "Contact Us"
+  subtitle: "We'd love to hear from you. Please fill out the form below."
+  form:
+    email: "Email"
+    emailPlaceholder: "your@email.com"
+    phone: "Phone Number"
+    phonePlaceholder: "+1 (555) 000-0000"
+    details: "Details"
+    detailsPlaceholder: "How can we help you?"
+    send: "Send Message"
+    sending: "Sending..."
+  success: "Message sent! We'll get back to you soon."
