@@ -245,4 +245,5 @@
 .react-international-phone-country-selector-dropdown__list-item-dial-code {
     color: var(--color-text-primary) !important;
     font-size: var(--font-size-sm) !important;
+    height: 100%;
 }
