@@ -2,6 +2,7 @@
 // CTASection.tsx
 // ============================================
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import './CTASection.css';
 
 export const CTASection = () => {
@@ -16,9 +17,11 @@ export const CTASection = () => {
         <p className="cta-description">
           {t('ctaSection.description')}
         </p>
-        <button className="cta-action-button">
-          {t('ctaSection.button')}
-        </button>
+        <Link to="/contact">
+          <button className="cta-action-button">
+            {t('ctaSection.button')}
+          </button>
+        </Link>
       </div>
     </section>
   );
