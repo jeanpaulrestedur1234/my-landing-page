@@ -1,0 +1,389 @@
+/* ============================================
+   ENHANCED VISUAL EFFECTS & INTERACTIONS
+   ============================================ */
+
+/* Smooth Scrolling & Viewport Transitions */
+@supports (scroll-behavior: smooth) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Enhanced Link Interactions */
+a {
+    transition: all 0.3s ease;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Button Focus Styles */
+button:focus-visible {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 2px;
+}
+
+/* ============================================
+   IMPROVED TYPOGRAPHY HIERARCHY
+   ============================================ */
+
+h1 {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   FORM ENHANCEMENTS
+   ============================================ */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    transform: translateY(-1px);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ============================================
+   BACKDROP FILTER IMPROVEMENTS
+   ============================================ */
+
+@supports (backdrop-filter: blur(10px)) {
+    .header {
+        backdrop-filter: blur(16px);
+    }
+
+    .cta-container {
+        backdrop-filter: blur(10px);
+    }
+
+    .stat-item {
+        backdrop-filter: blur(12px);
+    }
+}
+
+/* Fallback for non-supporting browsers */
+@supports not (backdrop-filter: blur(10px)) {
+    .header {
+        background: rgba(10, 15, 24, 0.95);
+    }
+
+    .cta-container {
+        background: rgba(10, 15, 24, 0.9);
+    }
+
+    .stat-item {
+        background: rgba(10, 15, 24, 0.85);
+    }
+}
+
+/* ============================================
+   SELECTION STYLES
+   ============================================ */
+
+::selection {
+    background: rgba(0, 242, 255, 0.3);
+    color: var(--color-text-primary);
+}
+
+::-moz-selection {
+    background: rgba(0, 242, 255, 0.3);
+    color: var(--color-text-primary);
+}
+
+/* ============================================
+   SCROLLBAR STYLING (Webkit Browsers)
+   ============================================ */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 242, 255, 0.2);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 242, 255, 0.4);
+}
+
+/* ============================================
+   ANIMATION PREFERS REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ============================================
+   DARK MODE ENHANCEMENTS
+   ============================================ */
+
+/* Enhanced shadows for dark mode */
+@media (prefers-color-scheme: dark) {
+    box-shadow {
+        filter: brightness(1.2);
+    }
+}
+
+/* ============================================
+   IMPROVED RESPONSIVE SPACING
+   ============================================ */
+
+@media (max-width: 640px) {
+    .hero-section {
+        padding-top: var(--spacing-16);
+        padding-bottom: var(--spacing-12);
+    }
+
+    .services-section,
+    .choose-us-section,
+    .cta-section {
+        padding-top: var(--spacing-12);
+        padding-bottom: var(--spacing-12);
+    }
+
+    .service-card,
+    .stat-card {
+        padding: var(--spacing-6);
+    }
+}
+
+/* ============================================
+   HOVER & POINTER ENHANCEMENTS
+   ============================================ */
+
+@media (hover: hover) and (pointer: fine) {
+    /* Cursor improvements for hoverable elements */
+    button,
+    a,
+    [role="button"] {
+        cursor: pointer;
+    }
+
+    /* Subtle hover feedback for interactive elements */
+    .nav-link {
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--color-primary-500);
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+}
+
+/* ============================================
+   FOCUS VISIBLE POLYFILL SUPPORT
+   ============================================ */
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
+}
+
+/* ============================================
+   CONTAINER QUERY SUPPORT (Future-proof)
+   ============================================ */
+
+@supports (container-type: inline-size) {
+    .service-card {
+        container-type: inline-size;
+    }
+
+    .stat-card {
+        container-type: inline-size;
+    }
+}
+
+/* ============================================
+   GRADIENT ANIMATIONS
+   ============================================ */
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.animated-gradient {
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+}
+
+/* ============================================
+   SUBTLE ENTRANCE ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ============================================
+   GLOW EFFECTS
+   ============================================ */
+
+@keyframes glowPulse {
+    0%, 100% {
+        text-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 40px rgba(0, 242, 255, 0.5);
+    }
+}
+
+.glow-effect {
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* ============================================
+   IMPROVING INTERACTIVE STATES
+   ============================================ */
+
+/* Active state for form inputs */
+input:active,
+textarea:active,
+select:active {
+    border-color: var(--color-primary-500);
+}
+
+/* Disabled state improvements */
+button:disabled,
+input:disabled,
+select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Loading state animation */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.loading {
+    animation: shimmer 2s infinite;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.05) 75%);
+    background-size: 1000px 100%;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+    .header,
+    .footer,
+    .nav-desktop,
+    .nav-mobile,
+    .cta-button {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+
+    p {
+        page-break-inside: avoid;
+    }
+}

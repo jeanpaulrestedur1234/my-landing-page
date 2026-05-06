@@ -1,5 +1,8 @@
 @import './variables.css';
-@import './components.css';@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');@import './pages.css';
+@import './components.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import './pages.css';
+@import './enhanced-effects.css';
 
 * {
     margin: 0;
@@ -63,6 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
-    line-height: 1.2;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
 }

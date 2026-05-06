@@ -5,14 +5,22 @@ interface Props {
     children: ReactNode;
     direction?: 'up' | 'down' | 'left' | 'right';
     id?: string;
+    duration?: number;
+    delay?: number;
 }
 
-export const ScrollReveal = ({ children, direction = 'up', id }: Props) => {
+export const ScrollReveal = ({ 
+    children, 
+    direction = 'up', 
+    id,
+    duration = 0.7,
+    delay = 0
+}: Props) => {
     const directions = {
-        up: { y: 40 },
-        down: { y: -40 },
-        left: { x: 40 },
-        right: { x: -40 },
+        up: { y: 50, x: 0 },
+        down: { y: -50, x: 0 },
+        left: { x: 50, y: 0 },
+        right: { x: -50, y: 0 },
     };
 
     return (
@@ -20,7 +28,7 @@ export const ScrollReveal = ({ children, direction = 'up', id }: Props) => {
             id={id}
             initial={{
                 opacity: 0,
-                scale: 0.95,
+                scale: 0.92,
                 ...directions[direction]
             }}
             whileInView={{
@@ -29,11 +37,14 @@ export const ScrollReveal = ({ children, direction = 'up', id }: Props) => {
                 x: 0,
                 y: 0
             }}
-
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.25, margin: "0px 0px -50px 0px" }}
             transition={{
-                duration: 0.6,
-                ease: "easeOut"
+                duration,
+                delay,
+                ease: [0.34, 1.56, 0.64, 1],  // Custom ease curve for elasticity
+                type: "spring",
+                stiffness: 46,
+                damping: 13
             }}
         >
             {children}
