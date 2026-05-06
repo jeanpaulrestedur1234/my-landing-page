@@ -298,7 +298,7 @@
 }
 
 .highlight-text {
-    color: var(--color-primary-500);
+    color: var(--color-primary-600);
     display: inline;
     text-shadow: 0 0 30px rgba(0, 242, 255, 0.4);
     position: relative;
@@ -333,9 +333,6 @@
     flex-direction: column;
     gap: var(--spacing-3);
     padding: var(--spacing-5);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
     backdrop-filter: blur(12px);
 }
 
@@ -711,7 +708,8 @@
 .trusted-by {
     padding-top: var(--spacing-12);
     padding-bottom: var(--spacing-12);
-    background-color: var(--color-surface);
+    background-color: var(--color-primary-900);
+    font-size: large;
 }
 
 @media (min-width: 640px) {
@@ -752,7 +750,7 @@
 }
 
 .brand-item {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--color-text-primary);
     transition: color 0.3s ease;
