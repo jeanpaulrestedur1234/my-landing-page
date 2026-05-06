@@ -66,9 +66,6 @@ export const Header = () => {
           >
             {t('header.nav.about')}
           </Link>
-          <Link to="/contact" className="nav-link">
-            Contact
-          </Link>
         </nav>
 
         {/* CTA Button & Lang Switcher */}
