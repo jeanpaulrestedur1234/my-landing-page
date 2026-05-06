@@ -1,7 +1,6 @@
 // ============================================
 // TrustedBy.tsx
 // ============================================
-import './TrustedBy.css';
 
 export const TrustedBy = () => {
   const brands = ['TechCorp', 'InnovateLab', 'DataFlow', 'CloudSync', 'NextGen', 'SmartOps', 'DigiPro', 'AutomateX'];

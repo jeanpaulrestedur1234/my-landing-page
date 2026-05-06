@@ -3,14 +3,12 @@
 // ============================================
 import { useTranslation } from 'react-i18next';
 import { HeroIllustration } from './HeroIllustration';
-import './HeroSection.css';
 
 export const HeroSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="hero-section">
-
+    <section className="hero-section" id="hero">
       <div className="hero-container">
         {/* Left Content */}
         <div className="hero-content">
@@ -52,15 +50,13 @@ export const HeroSection = () => {
               ))}
             </div>
           </div>
-
-
         </div>
+
+        {/* Right Illustration */}
         <div className="hero-illustration-wrapper">
           <HeroIllustration />
         </div>
       </div>
-
-
     </section>
   );
 };

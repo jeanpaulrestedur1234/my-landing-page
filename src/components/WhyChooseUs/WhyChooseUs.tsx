@@ -2,7 +2,6 @@
 // WhyChooseUs.tsx
 // ============================================
 import { useTranslation } from 'react-i18next';
-import './WhyChooseUs.css';
 
 export const WhyChooseUs = () => {
   const { t } = useTranslation();

@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 import { Bot, Zap, Target, Rocket, Users, BarChart3 } from 'lucide-react';
-import './Services.css';
 
 export const Services = () => {
   const { t } = useTranslation();

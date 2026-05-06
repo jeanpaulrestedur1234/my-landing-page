@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import './Header.css';
 
 export const Header = () => {
   const { t, i18n } = useTranslation();

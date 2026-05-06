@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './Contact.css';
 import { useTranslation } from 'react-i18next';
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
