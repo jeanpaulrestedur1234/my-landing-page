@@ -1,6 +1,5 @@
 @import './variables.css';
-@import './components.css';
-@import './pages.css';
+@import './components.css';@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');@import './pages.css';
 
 * {
     margin: 0;

@@ -2,31 +2,31 @@
   /* ============================================
      PRIMARY - Blues
      ============================================ */
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
-  --color-primary-950: #172554;
+  --color-primary-50: #d5f4ff;
+  --color-primary-100: #a8e7ff;
+  --color-primary-200: #6ed2ff;
+  --color-primary-300: #4facfe;
+  --color-primary-400: #2ebcff;
+  --color-primary-500: #00f2ff;
+  --color-primary-600: #00d9ff;
+  --color-primary-700: #00b3f0;
+  --color-primary-800: #0a99d8;
+  --color-primary-900: #077bb0;
+  --color-primary-950: #053f7a;
 
   /* ============================================
-     SECONDARY - Cyan
+     SECONDARY - Cyan Cool
      ============================================ */
-  --color-secondary-50: #f0f9ff;
-  --color-secondary-100: #e0f2fe;
-  --color-secondary-200: #bae6fd;
-  --color-secondary-300: #7dd3fc;
-  --color-secondary-400: #06f;
-  --color-secondary-500: #0ea5e9;
-  --color-secondary-600: #0284c7;
-  --color-secondary-700: #0369a1;
-  --color-secondary-800: #075985;
-  --color-secondary-900: #0c4a6e;
+  --color-secondary-50: #eef8ff;
+  --color-secondary-100: #ddeeff;
+  --color-secondary-200: #c5e7ff;
+  --color-secondary-300: #94cfff;
+  --color-secondary-400: #94a3b8;
+  --color-secondary-500: #7f9cab;
+  --color-secondary-600: #6b7e9e;
+  --color-secondary-700: #586b8c;
+  --color-secondary-800: #394759;
+  --color-secondary-900: #192431;
 
   /* ============================================
      NEUTRAL - Grays
@@ -40,22 +40,30 @@
   --color-neutral-600: #475569;
   --color-neutral-700: #334155;
   --color-neutral-800: #1e293b;
-  --color-neutral-900: #0f172a;
-  --color-neutral-950: #0a0e27;
+  --color-neutral-900: #0a0f18;
+  --color-neutral-950: #05070d;
 
   /* ============================================
      SEMANTIC COLORS
      ============================================ */
-  --color-background: #0d1117;
-  --color-background-secondary: var(--color-neutral-900);
-  --color-surface: var(--color-neutral-800);
-  --color-surface-hover: var(--color-neutral-700);
+  --color-background: #0a0f18;
+  --color-background-secondary: rgba(10, 15, 24, 0.92);
+  --color-surface: rgba(255, 255, 255, 0.05);
+  --color-surface-hover: rgba(255, 255, 255, 0.08);
 
   --color-text-primary: #ffffff;
-  --color-text-secondary: #cbd5e1;
-  --color-text-muted: var(--color-neutral-500);
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #7f9cab;
+  --color-accent: #00f2ff;
+
+  --gradient-primary: linear-gradient(90deg, #4facfe 0%, #00f2ff 100%);
+  --gradient-cta: linear-gradient(90deg, #4facfe 0%, #00f2ff 100%);
+  --gradient-glass: rgba(255, 255, 255, 0.06);
 
   --color-white: #ffffff;
+
+  --shadow-primary: 0 30px 80px rgba(0, 242, 255, 0.16);
+  --shadow-neon: 0 0 30px rgba(0, 242, 255, 0.22);
 
   /* ============================================
      SPACING SYSTEM
