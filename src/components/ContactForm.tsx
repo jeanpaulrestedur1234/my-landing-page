@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Calendar, Clock, CheckCircle2, ChevronRight, Send, User, Building, Briefcase, Mail, Phone, MessageSquare } from "lucide-react";
 
 interface ContactFormProps {

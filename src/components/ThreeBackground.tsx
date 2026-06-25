@@ -302,7 +302,7 @@ export default function ThreeBackground() {
     <div
       ref={containerRef}
       className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0"
-      style={{ mixBlendingMode: "screen" }}
+      style={{ mixBlendMode: "screen" }}
     />
   );
 }
