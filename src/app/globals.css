@@ -1,26 +1,181 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --color-background: #050505;
+  --color-foreground: #ffffff;
+  --color-brand-black: #050505;
+  --color-brand-graphite: #111111;
+  --color-brand-dark: #1a1a1a;
+  --color-electric-blue: #0066ff;
+  --color-bright-cyan: #00f2fe;
+  
+  --animate-marquee: marquee 25s linear infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow: glow 3s ease-in-out infinite alternate;
+  
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 8px rgba(0, 102, 255, 0.4), 0 0 15px rgba(0, 242, 254, 0.2);
+    }
+    to {
+      text-shadow: 0 0 18px rgba(0, 102, 255, 0.7), 0 0 25px rgba(0, 242, 254, 0.4);
+    }
   }
 }
 
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+}
+
+/* Base resets and defaults */
+html,
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 102, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222222;
+  border-color: rgba(0, 242, 254, 0.2);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(17, 17, 17, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(0, 242, 254, 0.2);
+  background: rgba(26, 26, 26, 0.85);
+  box-shadow: 0 8px 30px rgba(0, 102, 255, 0.05);
+}
+
+.glass-navbar {
+  background: rgba(5, 5, 5, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Cyber Glow Effects */
+.glow-text {
+  background: linear-gradient(135deg, #ffffff 30%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-accent {
+  background: linear-gradient(135deg, #0066ff 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-btn-primary {
+  position: relative;
+  background: linear-gradient(135deg, #0066ff 0%, #00f2fe 100%);
+  color: #ffffff;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.3);
+}
+
+.glow-btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: all 0.6s ease;
+}
+
+.glow-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.5);
+}
+
+.glow-btn-primary:hover::before {
+  left: 100%;
+}
+
+.glow-border {
+  position: relative;
+}
+
+.glow-border::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.2), rgba(0, 242, 254, 0.2));
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.glow-border:hover::after {
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.6), rgba(0, 242, 254, 0.6));
+  opacity: 1;
+}
+
+/* Background Cyber Grid */
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center center;
+}
+
+/* Custom radial glows */
+.radial-glow-blue {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 102, 255, 0.15) 0%, transparent 60%);
+}
+
+.radial-glow-cyan {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 242, 254, 0.12) 0%, transparent 60%);
+}
+
+/* Custom Calendar overrides */
+.custom-calendar button {
+  transition: all 0.2s ease;
 }
